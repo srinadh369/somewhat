@@ -1,0 +1,102 @@
+@CHARSET "ISO-8859-1";
+
+#menu{
+	width: 1250px;
+	background-color:black;
+	hieght:700;	
+	
+     }
+     
+#logo
+
+   {
+	width: 1250px;
+	background-color:#00004d;
+	hieght:800;
+	
+     }
+h1{text-align:center;
+   color:#00ace6
+   }
+   
+  
+     
+ small{text-align:center;
+   color:#00ace6
+   }
+     
+a.more{
+	
+	color:white;
+	
+ }
+ a.more:hover{
+ 
+ color:#00004d;
+ }
+ 
+ .btn{
+    margin-left:10px;
+}
+
+#placeholderdiv
+{
+	
+	width:1000;
+	float:inherit;
+	
+}
+
+#FeatureHeader
+{
+	
+	width: 1250px;
+	background-color:#00ace6;
+	hieght:500;	
+}
+
+ul{
+	
+	background-color: #00ace6;
+	
+	
+}
+
+#list
+{
+	width:50;
+	
+}
+
+#dividepage
+{
+	width:1250px;
+	background-color:#00004d;
+	hieght:500;
+	
+}
+
+#headder
+{
+	
+	width: 1250px;
+	background-color:#00004d;
+	hieght:800;
+}
+#head{
+	
+	width: 1250px;
+	background-color:#00004d;
+	hieght:500;
+	
+}
+
+#footer
+{
+	width: 1250px;
+	background-color:#00004d;
+	hieght:300px;
+	color:white
+	
+}
+ 
