@@ -1,0 +1,90 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 3% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: -5% -2% 0 0;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Notify-button{
+    text-align: center;
+    background-color: #ff6600;
+    border-bottom-color: #ff6600;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+    margin: 15% 0 0 -25%;
+    font-family: MetaWebPro light;
+    color: #ffffff;
+}
+.login-page {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+}
+.login-form {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    margin: 10% auto 100px;
+    text-align: center;
+}
+.login-form input {
+    font-family: sans-serif;
+    outline: 0;
+    /* background: #f2f2f2; */
+    width: 75%;
+    /* border: 0; */
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    /* border-radius: 15px; */
+}
+
+.login-form button {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #ff6600;
+    width: 35%;
+    border: 0;
+    padding: 8px 0px 8px 0px;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10% 0 0 0;
+    font-weight: bold;
+}
