@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Need to Done</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="div3 ng-scope" id="div3" ng-app="myApp" ng-controller="myCtrl" data-ng-init="generatecaptcha()">         <form class="registeringForm" enctype="application/json" name="loginForm" ng-submit="submitted = true" novalidate>
+           <div class="row">
+	            <div class="col-md-2 hidden-xs hidden-sm"></div>
+	             <div class="col-md-3 col-sm-12">
+				  <input type="text" class="enteringfield" name="firstName" ng-model="firstName" placeholder="First Name" style="margin-top: 10px" ng-pattern="/^[a-zA-Z\s]*$/" ng-maxlength="25" required/>
+	               <p class="cap8" ng-if="submitted && loginForm.firstName.$error.required">Your first name is required.</p>
+				   <p class="cap8" ng-show="loginForm.firstName.$error.maxlength">Your first name is too long.</p>
+	               <p class="cap8" ng-show="loginForm.firstName.$error.pattern">Only characters are allowed.</p>
+	              <br>
+	              <input type="text" class="enteringfield" name="lastName" ng-model="lastName" placeholder="Last Name" ng-pattern="/^[a-zA-Z\s]*$/" ng-maxlength="25" required />
+	               <p class="cap8" ng-if="submitted && loginForm.lastName.$error.required">Your last name is required.</p>
+	               <p class="cap8" ng-show="loginForm.lastName.$error.maxlength">Your last name is too long.</p>
+	               <p class="cap8" ng-show="loginForm.lastName.$error.pattern">Only characters are allowed.</p> 
+	              <br>  
+	              <input type="email" class="enteringfield" name="email" ng-model="emailAddress" required="" placeholder="Email Address" ng-maxlength="60" required />
+	               <p class="cap10" ng-if="submitted && loginForm.email.$error.required">A valid email address is required.</p> 
+				   <p class="cap5" ng-show="loginForm.email.$error.email">Please enter valid email address.</p> 
+	              </div>
+			</div>
+                <p><input  type="checkbox" name="checked" ng-model="checkedbox" required><span id="chkText">By clicking this box, I give Discover Bank permission to send me this one time email notification.</span>
+                <p class="cap5" ng-show="submitted && loginForm.checked.$error.required">Please select this to continue.</p> </p>
+                <br>
+              <button type="submit" ng-click="loginForm.$valid && saveCustomer(formdata)" class="click-button" id="add">Submit</button>
+            </form>
+           </div>		  
+        </div>     
+<script>
+    // create angular app
+    var validationApp = angular.module('myApp', []);
+
+    // create angular controller
+    validationApp.controller('myCtrl', function($scope) {
+
+        // function to submit the form after all validation has occurred            
+        $scope.submitForm = function() {
+
+            // check to make sure the form is completely valid
+            if ($scope.userForm.$valid) {
+
+            }
+
+        };
+
+    });
+</script>
+
+</body>
+</html>
